@@ -1,0 +1,8 @@
+{
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportWildcardImportFromLibrary": "none",
+        "reportInvalidStringEscapeSequence": "none",
+        "reportIncompatibleVariableOverride": "none",
+    },
+    "python.analysis.typeCheckingMode": "standard",
+}

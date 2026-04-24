@@ -13,6 +13,19 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.11.7"
+          enable-cache: True
+
+      - name: Generate output file
+        run: |
+          uv sync
+          mkdir gds
+          uv run src/generate_layout.py
+          # TODO: generate LEF file
+
       - name: Read top module name
         id: top_module
         run: |
@@ -24,7 +37,7 @@ jobs:
           top_module: ${{ steps.top_module.outputs.TOP_MODULE }}
           gds_path: gds/${{ steps.top_module.outputs.TOP_MODULE }}.gds
           lef_path: lef/${{ steps.top_module.outputs.TOP_MODULE }}.lef
-          verilog_path: src/project.v
+          verilog_path: ci/blackbox.v
           pdk: sky130A
 
   precheck:
