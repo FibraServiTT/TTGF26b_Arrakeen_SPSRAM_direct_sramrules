@@ -33,8 +33,8 @@ wheels = [
 
 [[package]]
 name = "c4m-flexmem"
-version = "0.1.1.dev85+gd183db4"
-source = { git = "https://gitlab.com/Chips4Makers/c4m-flexmem?rev=dev_SRAM#d183db45ea5437c181ccda8bfe80fee34da506aa" }
+version = "0.1.1.dev86+g7b836c8"
+source = { git = "https://gitlab.com/Chips4Makers/c4m-flexmem?rev=dev_SRAM#7b836c81d3022644f766ff9f0594e359105ec413" }
 dependencies = [
     { name = "c4m-flexcell" },
     { name = "pdkmaster" },
