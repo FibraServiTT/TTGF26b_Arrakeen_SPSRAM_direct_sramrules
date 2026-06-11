@@ -1356,7 +1356,7 @@ wheels = [
 ]
 
 [[package]]
-name = "ttsky-spsram-direct"
+name = "tt-arrakeen-spsram-direct"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

@@ -1,7 +1,7 @@
 [project]
-name = "ttsky-spsram-direct"
+name = "tt-arrakeen-spsram-direct"
 version = "0.1.0"
-description = "Sky130 single port SRAM with pins connected directly to TT tile pins."
+description = "Single port SRAM with pins connected directly to TT tile pins."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

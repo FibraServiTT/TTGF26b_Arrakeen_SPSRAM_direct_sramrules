@@ -3,10 +3,10 @@ meta:
   substituting_steps:
     OpenROAD.IRDropReport: null
 
-DESIGN_NAME: tt_um_c4m_spsram_direct
+DESIGN_NAME: tt_um_arrakeen_spsram_direct
 
 VERILOG_FILES:
-- dir::src/tt_um_c4m_spsram_direct.v
+- dir::src/tt_um_arrakeen_spsram_direct.v
 
 FP_DEF_TEMPLATE: dir::def/tt_block_1x1_pg.def
 
