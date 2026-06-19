@@ -19,7 +19,7 @@ prefix = "SP6T"
 cell_name = "SRAM128x8"
 
 lib = gf180mcu.Library(name=f"{prefix}{cell_name}")
-memfab = gf180mcu.SPSRAMFactory(lib=lib, name_prefix=prefix)
+memfab = gf180mcu.SPSRAMFactory(lib=lib, name_prefix=prefix, sram_rules=True)
 mem_cell = memfab.block(words=128, word_size=8, we_size=1, cell_name=cell_name)
 
 # Be sure layout has been generated
