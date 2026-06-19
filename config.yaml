@@ -3,7 +3,7 @@ meta:
   substituting_steps:
     OpenROAD.IRDropReport: null
 
-DESIGN_NAME: tt_um_arrakeen_spsram_direct
+DESIGN_NAME: tt_um_arrakeen_spsram_direct_sramrules
 
 VERILOG_FILES:
 - dir::src/tt_um_arrakeen_spsram_direct.v

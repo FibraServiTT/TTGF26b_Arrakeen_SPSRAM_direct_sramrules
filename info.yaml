@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "TT-Arrakeen-SPSRAM-direct"      # Project title
+  title:        "TT-Arrakeen-SPSRAM-direct-sramrules"      # Project title
   author:       "Staf Verhaegen"
   discord:      "Chips4Makers"
   description:  "Single port SRAM with pins connected directly to TT tile pins."
@@ -13,7 +13,7 @@ project:
   uses_3v3: false
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_arrakeen_spsram_direct"
+  top_module:  "tt_um_arrakeen_spsram_direct_sramrules"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:
