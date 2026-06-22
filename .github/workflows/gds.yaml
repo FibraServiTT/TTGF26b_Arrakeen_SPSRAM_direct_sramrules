@@ -35,7 +35,7 @@ jobs:
           nix run github:librelane/librelane/dev -- --pdk gf180mcuD --skip Magic.DRC config.yaml
           cp runs/*/final/gds/* gds/
           cp runs/*/final/lef/* lef/
-          cp runs/*/final/vh/* verilog/
+          egrep -v '(ifdef|endif)' runs/*/final/vh/* > verilog/`basename runs/*/final/vh/*`
 
       - name: Read top module name
         id: top_module
